@@ -6,7 +6,7 @@
 /*   By: jforner <jforner@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 09:33:27 by jforner           #+#    #+#             */
-/*   Updated: 2022/07/12 10:43:01 by jforner          ###   ########.fr       */
+/*   Updated: 2022/07/13 08:42:29 by jforner          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ DiamondTrap::DiamondTrap(void) : ClapTrap("default_clap_name")
 
 DiamondTrap::DiamondTrap(const DiamondTrap &copy) : ClapTrap(copy)
 {
+	this->_Name = copy._Name;
 	std::cout << "diamond created from a copy !"<< std::endl;
 }
 
